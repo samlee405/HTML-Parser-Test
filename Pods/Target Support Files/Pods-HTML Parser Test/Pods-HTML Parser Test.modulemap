@@ -1,0 +1,6 @@
+framework module Pods_HTML_Parser_Test {
+  umbrella header "Pods-HTML Parser Test-umbrella.h"
+
+  export *
+  module * { export * }
+}

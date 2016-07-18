@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Foundation
+import Kanna
 
 class ViewController: UIViewController {
+    
+    let url = NSURL(string: "https://en.wikipedia.org/wiki/Cat")
+    if let doc = HTML(url: url!, encoding: NSUTF8StringEncoding) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

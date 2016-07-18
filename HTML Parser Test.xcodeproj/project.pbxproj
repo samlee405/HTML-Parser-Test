@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42CF959CCDFF5D830C138BBF /* Pods_HTML_Parser_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8E153C9B6819D2AB3E8D4 /* Pods_HTML_Parser_Test.framework */; };
 		EF348A001D384F7B00E55AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3489FF1D384F7B00E55AF3 /* AppDelegate.swift */; };
 		EF348A021D384F7B00E55AF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF348A011D384F7B00E55AF3 /* ViewController.swift */; };
 		EF348A051D384F7B00E55AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF348A031D384F7B00E55AF3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5C132BC9E6546FFCAFAEC4 /* Pods-HTML Parser Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTML Parser Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTML Parser Test/Pods-HTML Parser Test.debug.xcconfig"; sourceTree = "<group>"; };
+		4314A391710E876710BDD934 /* Pods-HTML Parser Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTML Parser Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTML Parser Test/Pods-HTML Parser Test.release.xcconfig"; sourceTree = "<group>"; };
 		EF3489FC1D384F7B00E55AF3 /* HTML Parser Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTML Parser Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3489FF1D384F7B00E55AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF348A011D384F7B00E55AF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		EF348A061D384F7B00E55AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF348A091D384F7B00E55AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF348A0B1D384F7B00E55AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB8E153C9B6819D2AB3E8D4 /* Pods_HTML_Parser_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTML_Parser_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CF959CCDFF5D830C138BBF /* Pods_HTML_Parser_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24D09780AE3B7FFF98251D04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B5C132BC9E6546FFCAFAEC4 /* Pods-HTML Parser Test.debug.xcconfig */,
+				4314A391710E876710BDD934 /* Pods-HTML Parser Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9BC28AC2E572A72A560C328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8E153C9B6819D2AB3E8D4 /* Pods_HTML_Parser_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF3489F31D384F7A00E55AF3 = {
 			isa = PBXGroup;
 			children = (
 				EF3489FE1D384F7B00E55AF3 /* HTML Parser Test */,
 				EF3489FD1D384F7B00E55AF3 /* Products */,
+				24D09780AE3B7FFF98251D04 /* Pods */,
+				C9BC28AC2E572A72A560C328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF348A0E1D384F7B00E55AF3 /* Build configuration list for PBXNativeTarget "HTML Parser Test" */;
 			buildPhases = (
+				2A372F539901823CC038E9F6 /* [CP] Check Pods Manifest.lock */,
 				EF3489F81D384F7B00E55AF3 /* Sources */,
 				EF3489F91D384F7B00E55AF3 /* Frameworks */,
 				EF3489FA1D384F7B00E55AF3 /* Resources */,
+				65B6D4D684EEA28D03EB7C01 /* [CP] Embed Pods Frameworks */,
+				66F8EC6A8FBB6E2D0F45E09A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A372F539901823CC038E9F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65B6D4D684EEA28D03EB7C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTML Parser Test/Pods-HTML Parser Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F8EC6A8FBB6E2D0F45E09A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTML Parser Test/Pods-HTML Parser Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF3489F81D384F7B00E55AF3 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		EF348A0F1D384F7B00E55AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5C132BC9E6546FFCAFAEC4 /* Pods-HTML Parser Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HTML Parser Test/Info.plist";
@@ -258,6 +334,7 @@
 		};
 		EF348A101D384F7B00E55AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4314A391710E876710BDD934 /* Pods-HTML Parser Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HTML Parser Test/Info.plist";
@@ -286,6 +363,7 @@
 				EF348A101D384F7B00E55AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
